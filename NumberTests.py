@@ -32,7 +32,6 @@ def fibonacciSequence(value):
         nums.append(nums[-1] + nums[-2])
     return nums
 
-# Test functions in this main block
 def main():
     knownPrimes = [3, 7, 11, 13, 17]
 
