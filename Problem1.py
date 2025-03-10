@@ -1,15 +1,22 @@
-#Project Euler Problem 1
+# Problem1.py
+# Project Euler Problem 1
 
-import NumberTests
+import NumberTests 
+
+def isPalindrome(n):
+    """Checks if a number is a palindrome."""
+    return str(n) == str(n)[::-1]
 
 def main():
-  total = 0
-  for i in range(1001):
-    if NumberTests.isThreeOrFive(i):
-      total += i
+    largest_palindrome = 0
 
-  print(total)
+    for i in range(100, 1000):
+        for j in range(100, 1000):
+            product = i * j
+            if isPalindrome(product) and product > largest_palindrome:
+                largest_palindrome = product
 
+    print(largest_palindrome)  
 
-if __name__ == '__main__':
-  main()
+if __name__ == "__main__":
+    main()
