@@ -6,7 +6,7 @@ def isThreeOrFive(n):
         return True
     else:
         return False
-
+    
 def isPrime(p):
     """Returns boolean (True/False) if the value given is prime."""
     if p < 2:
